@@ -11,7 +11,7 @@ const databases = new sdk.Databases(client);
 
 module.exports = async function (req, res) {
     try {
-        const fileId = req.files.fileId;  // File uploaded to Appwrite Storage
+        const fileId = '675608fb00238594487b';
         const file = await storage.getFile(fileId);  // Fetch the file
 
         // Parse the file content (assuming it's a JSON file)
